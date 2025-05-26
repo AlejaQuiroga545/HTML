@@ -1,3 +1,4 @@
+/*General styles*/
 body{
     font-family: 'Poppins', sans-serif;
     margin: 2cm;
@@ -7,28 +8,40 @@ body{
     align-items: center;
     justify-content: center;
 }
-#title{
-    text-align: center; color: #333;
-    margin-top: 30px;
-}
+
 img{
-    max-width: 80%;
+    max-width: 90%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px #00000033;
 }
+p{
+    font-size: 15px;
+    margin: 15px;
+}
+
+/*Product*/
 .container{
-    width: 450px;
+    width: 400px;
     background-color: white;
     padding: 30px;
     margin-bottom: 40px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 12px #0000001a;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+.container:hover{
+    transform: scale(1.03);
+}
+
+#title{
+    text-align: center; color: #333;
+    margin-top: 40px;
 }
 
 #card{
-    margin-top: 60px;
+    margin-top: 30px;
 }
 #price{
     color: #a56dff;
@@ -42,8 +55,11 @@ button{
     font-size: 18px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
 }
 button:hover{
     cursor: pointer;
     background-color: #7926ff;
+    transform: scale(1.02);
 }
