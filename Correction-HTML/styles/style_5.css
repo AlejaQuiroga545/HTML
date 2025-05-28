@@ -1,0 +1,57 @@
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+      text-decoration: underline;
+      color: #6a11cb;
+      margin-bottom: 30px;
+    }
+
+    main {
+      max-width: 700px;
+      margin: auto;
+      padding: 50px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .paragraph {
+      font-size: 16px;
+      text-align: justify;
+      letter-spacing: 0.5px;
+      word-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .special {
+      /*font-variant: small-caps; las letras minúsculas deben ser convertidas a mayúsculas, pero con un tamaño más pequeño que las mayúsculas regulares.*/
+      text-transform: uppercase; /*Indica que todo el texto se debe mostrar en mayúsculas.*/
+      font-weight: bold;
+      color: #c63de9;
+    }
+
+    #quote {
+      font-style: italic;
+      quotes: "«" "»";
+    }
+
+    #quote::before {
+      content: open-quote;
+    }
+
+    #quote::after {
+      content: close-quote;
+    }
