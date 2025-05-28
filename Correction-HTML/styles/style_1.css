@@ -1,0 +1,74 @@
+* {
+      box-sizing: border-box;
+    }
+
+    /* Estilos generales para el cuerpo de la página */
+    body {
+        font-family: 'Poppins', sans-serif;         
+        text-align: center;                   
+    }
+
+    /* Contenido principal */
+    main {
+        width: 700px; /* El ancho máximo del contenedor */
+        margin: 20px auto; /* 20px arriba/abajo, y centrado horizontalmente (auto a los lados) */
+        padding: 20px;     /* Espacio interno */
+        position: relative; /*  Necesario para que la caja especial se ubique dentro de este contenedor */
+    }
+
+
+    /* Sección donde van las cajas */
+    section.cajas {
+        display: flex;           /* Organiza las cajas horizontalmente */
+        flex-wrap: wrap;         /* Si no caben, se bajan a la siguiente línea */
+        gap: 20px;               /* Espacio entre cajas */
+        justify-content: center;/* Centra todas las cajas horizontalmente */
+    }
+
+
+    /* Estilo general de todas las cajas */
+    .caja {
+        background-color: #e592ff; 
+        padding: 20px;             /* Espacio dentro de la caja */
+        border-radius: 78px;        /* Esquinas redondeadas */
+        width: 200px;              /* Ancho fijo */
+        text-align: center;        /* Centra el texto */
+        transition: background-color 0.3s; /* Hace que el cambio de color sea suave */
+    }
+
+
+    /* Efecto cuando pasas el mouse por encima de una caja */
+    .caja:hover {
+      color: white;
+      background-color: #c63de9; 
+    }
+
+    /* Caja especial con posición fija dentro del área principal */
+    #especial {
+      background-color: #f3c1ff; 
+      top: 10px;                 /* Se aleja 10px del borde superior */
+      left: 10px;                /* Se aleja 10px del borde izquierdo */
+      z-index: 1;                /* Se asegura de estar encima si hay otras cosas */
+      transition: background-color 0.3s;
+
+    }
+    #especial:hover{
+        background-color: #c63de9;
+    }
+
+    /* Caja fija que se queda en la esquina inferior derecha aunque se haga scroll */
+    .fija {
+      position: fixed;                  /* Se mantiene en el mismo lugar en la pantalla */
+      bottom: 20px;                     /* 20px desde abajo */
+      right: 20px;                      /* 20px desde la derecha */
+      background-color: #ff47a3;       
+      color: white;                    
+      padding: 15px;                    /* Espacio interno */
+      border-radius: 10px;              
+      font-weight: bold;  
+      transition: background-color 0.3s;              
+    }
+
+    .fija:hover{
+        background-color: #ff0080;
+    }
