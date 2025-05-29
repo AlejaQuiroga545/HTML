@@ -1,0 +1,78 @@
+/* Aplica a todos los elementos: asegura que los tamaños se calculen correctamente */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif; 
+      text-align: center;
+      background-color: #f0f0f0;
+      padding: 40px;
+    }
+
+    main {
+      width: 700px; 
+      margin: 0 auto; 
+      padding: 20px;
+    }
+
+    h1{
+        color: #ff144e;
+    }
+    p{
+        color: #333;
+    }
+
+    /* Organization of boxes */
+    section.cajas {
+      display: flex;            /* Horizontal alignment */
+      flex-wrap: wrap;          /* If they don't fit, they go down */
+      gap: 30px;                /* Space between boxes */
+      justify-content: center; /* Horizontal centering */
+      margin-top: 30px;
+    }
+
+    /* Estilo base para todas las cajas */
+    .caja {
+      width: 100px;
+      height: 100px;
+      border-radius: 20px;
+      color: white;
+      font-weight: bold;
+      display: flex; /* Usamos flexbox para centrar el texto */
+      align-items: center; /* Centra el texto verticalmente */
+      justify-content: center; /* Centra el texto horizontalmente */
+      transition: all 0.6s ease; /* Suaviza todos los cambios (color, transformación, etc.) */
+    }
+    /* Caja que rota al pasar el mouse */
+    .rotar {
+      background-color: #ff47a3; 
+      transform: rotate(45deg);  /* Gira 45° desde el inicio */
+    }
+
+    .rotar:hover {
+      transform: rotate(360deg);        /* Gira más al pasar el mouse */
+      background-color: #ff0077;       /* Cambia a un azul más oscuro */
+    }
+
+    /* Caja que se agranda al pasar el mouse */
+    .escalar {
+      background-color: #ff144e;     
+    }
+
+    .escalar:hover {
+      transform: scale(1.5);           /* Aumenta su tamaño */
+      background-color:  #ec003b;
+      margin: 0 5rem ;
+      box-shadow: 0px  10px #ec003b93;
+    }
+
+    /* Caja que se mueve al pasar el mouse */
+    .trasladar {
+      background-color: #cb0ff1;      
+    }
+
+    .trasladar:hover {
+      transform: translate(160px,180px); /* Se mueve a la derecha y hacia abajo */
+      background-color: #b000c7;
+    }
