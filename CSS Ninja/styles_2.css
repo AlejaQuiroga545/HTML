@@ -1,78 +1,177 @@
-/* Aplica a todos los elementos: asegura que los tamaños se calculen correctamente */
-    * {
-      box-sizing: border-box;
-    }
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
 
-    body {
-      font-family: 'Poppins', sans-serif; 
-      text-align: center;
-      background-color: #f0f0f0;
-      padding: 40px;
-    }
 
-    main {
-      width: 700px; 
-      margin: 0 auto; 
-      padding: 20px;
-    }
+/*Header*/
+header{
+    display: flex;
+    align-items: center;
+    padding: 5px 12px;
+    
+}
 
-    h1{
-        color: #ff144e;
-    }
-    p{
-        color: #333;
-    }
+main{
+    padding: 5px 12px;
+}
+#logo{
+    width: 20px;
+    margin: auto 12px;
+}
 
-    /* Organization of boxes */
-    section.cajas {
-      display: flex;            /* Horizontal alignment */
-      flex-wrap: wrap;          /* If they don't fit, they go down */
-      gap: 30px;                /* Space between boxes */
-      justify-content: center; /* Horizontal centering */
-      margin-top: 30px;
-    }
+span{
+    margin: auto 12px;
+    font-weight: bold;
+    cursor:default
+}
 
-    /* Estilo base para todas las cajas */
-    .caja {
-      width: 100px;
-      height: 100px;
-      border-radius: 20px;
-      color: white;
-      font-weight: bold;
-      display: flex; /* Usamos flexbox para centrar el texto */
-      align-items: center; /* Centra el texto verticalmente */
-      justify-content: center; /* Centra el texto horizontalmente */
-      transition: all 0.6s ease; /* Suaviza todos los cambios (color, transformación, etc.) */
-    }
-    /* Caja que rota al pasar el mouse */
-    .rotar {
-      background-color: #ff47a3; 
-      transform: rotate(45deg);  /* Gira 45° desde el inicio */
-    }
+.middle_head {
+    background-color: rgb(255, 255, 255);
+    padding: 5px 8px;
+     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
 
-    .rotar:hover {
-      transform: rotate(360deg);        /* Gira más al pasar el mouse */
-      background-color: #ff0077;       /* Cambia a un azul más oscuro */
-    }
+.middle_head p, .last_head p{
+    display: inline-block;
+}
 
-    /* Caja que se agranda al pasar el mouse */
-    .escalar {
-      background-color: #ff144e;     
-    }
+#art{
+    background-color: #f5f5f5;
+    padding: 3px 30px;
+    margin: auto 5px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 1.2s;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
 
-    .escalar:hover {
-      transform: scale(1.5);           /* Aumenta su tamaño */
-      background-color:  #ec003b;
-      margin: 0 5rem ;
-      box-shadow: 0px  10px #ec003b93;
-    }
+#art:hover{
+    background-color: #96ff50;
+}
 
-    /* Caja que se mueve al pasar el mouse */
-    .trasladar {
-      background-color: #cb0ff1;      
-    }
+.UI{
+    background-color: #ffffff;
+    width: auto;
+    text-align: center;
+    padding: 3px 30px;
+    border-radius: 15px;
+    margin: auto 5PX;
+    transition: all 1.2s;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
 
-    .trasladar:hover {
-      transform: translate(160px,180px); /* Se mueve a la derecha y hacia abajo */
-      background-color: #b000c7;
-    }
+.UI:hover{
+    background-color: #a5ff69;
+}
+.last_head{
+    padding: 15px 12px;
+}
+
+#-in {
+    border: solid 2px #96ff50;
+    padding: 3px 20px; 
+    margin: auto 5px;
+    border-radius: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#-in:hover {
+    padding: 3px 30px; 
+    background-color: #e4e4e4;
+    border: solid 1px #e4e4e4;
+    margin: auto 12px;
+}
+
+#-up {
+    background-color: #96ff50;
+    padding: 3px 25px; 
+    margin: auto 5px;
+    border-radius: 25px;
+    text-align: center;
+    transition: all 0.3s ease; 
+}
+
+#-up:hover {
+    padding: 3px 35px; 
+    background-color: #e4e4e4;
+    margin: auto 12px;
+}
+
+.introduction{
+    margin: 15px;
+    padding: 10px 50px;
+    display: flex;
+}
+
+#cta{
+    color: #80f334;
+    font-size: 2em;
+    flex: 1;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+    translate: 0 12px;
+    transition: all 1.2s;
+}
+#cta:hover{
+    transform: scale(1.2);
+    translate: 50px 0;
+}
+
+#txt{
+    color: black;
+    text-align: center;
+}
+
+#pic{
+    flex: 1;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+#pwr{
+    color: #80f334;
+    transition: all 1.2s;
+}
+
+#pwr:hover{
+    color: white;
+    background-color: #80f334;
+    padding: 0 15px;
+    border-radius: 15px;
+}
+
+#pic img{
+    filter: blur(3px);
+    transform: scale(-1);
+    transition: all 1.3s;
+}
+
+#pic img:hover{
+    filter: blur(1px);
+
+}
+
+#uf{
+    color: black;
+}
+
+
+.art{
+    padding: 25px 15px;
+    flex: 1;
+}
