@@ -1,0 +1,84 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café de la loma</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header class="hero">
+    <!-- Video de fondo -->
+        <video autoplay muted loop class="hero-video"><source src="./assets/coffee.mp4" type="video/mp4"/>Tu navegador no soporta el video.</video>
+
+        <!-- Capa oscura para mejorar el contraste -->
+        <div class="overlay"></div>
+
+        <!-- Menú -->
+        <nav class="navbar">
+            <p class="logo">
+                <img src="./assets/granos-de-cafe.png" alt="">
+                <span>Café de la loma</span>
+            </p>
+            <ul class="nav-links">
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contenido principal -->
+        <div class="hero-content">
+            <h1>Colombian coffee</h1>
+            <p>La vida es como una taza de café, depende de cómo la prepares.</p>
+            <a href="#" class="btn">Explorar</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="container">
+                <div class="section-header">
+                <h2>Nuestros productos</h2>
+                </div>
+
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://www.foodandwine.com/thmb/xQZv2CX6FO5331PYK7uGPF1we9Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Partners-Flat-White-FT-BLOG0523-b11f6273c2d84462954c2163d6a1076d.jpg" alt="Chocolate Latte">
+                        <div class="product-info">
+                        <p class="price">$ 7. 200</p>
+                        <h3>Chocolate Latte</h3>
+                        <p class="rating">⭐ 4.9 (240 reviews)</p>
+                        </div>
+                        <button class="add-btn">+</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://www.nestleprofessional.cz/sites/default/files/styles/np_recipe_detail/public/2023-06/Flat%20white%204ku3.jpg?itok=4rvAAdY0" alt="Mocha Latte">
+                        <div class="product-info">
+                        <p class="price">$ 5.000</p>
+                        <h3>Mocha Latte</h3>
+                        <p class="rating">⭐ 5.0 (178 reviews)</p>
+                        </div>
+                        <button class="add-btn">+</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/tanned-woman-with-silver-rings-holding-a-hot-cup-of-royalty-free-image-1710155383.jpg?resize=980:*" alt="Coffee Latte">
+                        <div class="product-info">
+                        <p class="price">$ 6.000</p>
+                        <h3>Coffee Latte</h3>
+                        <p class="rating">⭐ 4.8 (235 reviews)</p>
+                        </div>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
