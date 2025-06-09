@@ -102,17 +102,18 @@ body {
 }
 
 .btn {
-  background-color: #f5c542;
+  background-color: #ffcc40;
   color: #333;
   padding: 12px 25px;
   text-decoration: none;
   font-weight: bold;
   border-radius: 25px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #e6b835;
+  background-color: #ffdc14;
+  color: white ;
 }
 
 main {
@@ -120,7 +121,7 @@ main {
   padding: 12px 52px;
 }
 
-/* --- Productos --- */
+/* Productos */
 .products {
   padding: 60px 0;
   background-color: #fff;
@@ -197,13 +198,13 @@ main {
 .map {
   margin: 15px;
   width: 100px;
-  flex-basis: 50%; /* Ocupa el 50% del espacio en pantallas grandes */
-  min-width: 200px; /* Ancho mínimo para el mapa */
+  flex-basis: 50%; 
+  min-width: 200px; 
 }
 
 .map iframe {
   border-radius: 15px;
-  width: 100%; /* El iframe ocupa el 100% de su contenedor */
+  width: 100%; 
   height: 450px;
 }
 
@@ -211,8 +212,8 @@ main {
   padding: 60px 55px;
   display: flex;
   flex-direction: column;
-  flex-basis: 40%; /* Ocupa el 40% del espacio en pantallas grandes */
-  min-width: 300px; /* Ancho mínimo para la información de ubicación/horario */
+  flex-basis: 40%;
+  min-width: 300px; 
 }
 
 .mp_hor span {
@@ -236,7 +237,7 @@ main {
   padding: 25px 40px;
   box-shadow: 10px 5px 50px 12px #e4e4e486;
   transition: all .5s ease;
-  margin-bottom: 20px; /* Espacio entre las secciones de horario/mapa */
+  margin-bottom: 20px; 
 }
 
 .mp_sec:hover {
@@ -246,20 +247,20 @@ main {
 
 .contenedor {
   display: flex;
-  width: 90%; /* Ajuste para que ocupe más ancho en pantalla */
+  width: 90%; 
   max-width: 1100px; /* Limita el ancho máximo */
-  padding: 50px; /* Reducir el padding para pantallas pequeñas */
+  padding: 50px; 
   background-image: url(https://cdn.pixabay.com/photo/2021/12/18/07/55/cup-6878196_1280.jpg);
   border-radius: 15px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; /* Centrar la imagen de fondo */
+  background-position: center; 
   margin: auto;
-  margin-bottom: 100px;
+  margin-top: 45px;
 }
 
 .contenedor .wrap {
-  max-width: 100%; /* Ajuste para ocupar el 100% del contenedor */
+  max-width: 100%; 
   margin: 0 auto;
   height: 100%;
   display: flex;
@@ -319,9 +320,9 @@ main {
 .reserve {
   display: flex;
   min-height: 100vh;
-  margin: 20px auto; /* Centrar el contenedor de reserva */
-  max-width: 1200px; /* Limitar el ancho máximo */
-  flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+  margin: 20px auto; 
+  max-width: 1200px; 
+  flex-wrap: wrap;
 }
 
 .form {
@@ -329,18 +330,18 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px; /* Ajuste del padding */
+  padding: 40px; 
   background-color: #fff;
   flex-grow: 1; /* Permite que el formulario crezca */
-  min-width: 300px; /* Ancho mínimo para el formulario */
+  min-width: 300px; 
 }
 
 .form-container {
   max-width: 600px;
-  margin: auto; /* Centrar el formulario dentro de su contenedor */
+  margin: auto; 
   padding: 30px 80px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Asegura que el formulario ocupe el ancho disponible */
+  width: 100%; 
 }
 
 .form-container h2 {
@@ -407,9 +408,9 @@ button:hover {
 
 .image img {
   width: 100%;
-  max-width: 500px; /* Limita el tamaño de la imagen */
+  max-width: 500px; 
   border-radius: 15px;
-  height: auto; /* Asegura que la imagen mantenga su proporción */
+  height: auto; 
 }
 
 footer {
@@ -440,7 +441,7 @@ footer {
 .footer-section h3 img {
   vertical-align: middle;
   margin-right: 5px;
-  height: 24px; /* Ajusta el tamaño del icono del logo */
+  height: 24px; 
 }
 
 .footer-section ul {
@@ -570,7 +571,7 @@ footer {
   margin-left: auto;
   margin-right: auto; /* centra horizontalmente */
   padding-left: 15px;
-  padding-right: 15px; /* para que no quede pegado a los bordes */
+  padding-right: 15px;
 }
 
 /* Opcional: para pantallas pequeñas (móviles) mantenemos padding para evitar bordes pegados */
@@ -584,8 +585,8 @@ footer {
 /* Para pantallas de 375px a 767px (dispositivos móviles) */
 @media (max-width: 767px) {
   .navbar {
-    flex-direction: column; /* Apilar logo y menú */
-    align-items: flex-start; /* Alinear elementos a la izquierda */
+    flex-direction: column; 
+    align-items: flex-start; 
     padding: 15px 20px;
   }
 
@@ -639,7 +640,7 @@ footer {
   .contenedor {
     padding: 30px;
     width: 95%;
-    margin-bottom: 50px;
+    margin: 10px;
   }
 
   .contenedor .wrap .box {
@@ -648,17 +649,17 @@ footer {
   }
 
   .contenedor .wrap .box .botones {
-    justify-content: center; /* Centrar los botones */
+    justify-content: center; 
   }
 
   .reserve {
     flex-direction: column;
-    margin: 10px 20px; /* Ajustar el margen para móviles */
+    margin: 10px 20px; 
   }
 
   .form, .image {
     width: 100%;
-    padding: 20px 0; /* Ajustar padding */
+    padding: 20px 0; 
   }
 
   .image {
