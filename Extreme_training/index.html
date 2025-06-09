@@ -25,24 +25,25 @@
                 <span>Café de la loma</span>
             </p>
             <ul class="nav-links">
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Ubicación</a></li>
-                <li><a href="#">Reserva</a></li>
+                <li><a href="#prod">Productos</a></li>
+                <li><a href="#about">Sobre nosotros</a></li>
+                <li><a href="#ub_hr">Ubicación</a></li>
+                <li><a href="#frm">Reserva</a></li>
             </ul>
         </nav>
 
-        <!-- Contenido principal -->
+        <!-- Hero| Contenido principal  -->
         <div class="hero-content">
             <h1>Colombian coffee</h1>
             <p>La vida es como una taza de café, depende de cómo la prepares.</p>
-            <a href="#" class="btn">Explorar</a>
+            <a href="#cat" class="btn">Explorar</a>
         </div>
     </header>
 
     <main>
-        
-        <section class="products">
+
+        <!--Categorías-->
+        <section id="cat" class="products">
             <div class="container">
                 <div class="section-header">
                 <h2>Nuestras categorías</h2>
@@ -80,8 +81,8 @@
             </div>
         </section>
 
-        <section>
-            <div class="contenedor">
+        <!--Sobre nosotros-->
+            <section id="about" class="contenedor">
                 <div class="wrap">
                     <div class="box">
                         <span>Sobre nosotros...</span>
@@ -92,10 +93,11 @@
                         </div>  
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="ubi">
+
+        <!--Ubicación y horarios-->
+        <section id="ub_hr" class="ubi">
 
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3378179448323!2d-75.58618982635231!3d6.219106326628548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44293f0e114eef%3A0x99610cdd44c7c081!2sRiwi!5e0!3m2!1ses!2sco!4v1749172277646!5m2!1ses!2sco" width="100" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -118,8 +120,8 @@
         </section>
 
         
-
-        <section class="products">
+        <!--Productos-->
+        <section id="prod" class="products">
             <div class="container">
                 <div class="section-header">
                 <h2>Nuestros productos</h2>
@@ -188,8 +190,8 @@
         </section>
 
         
-        <!--Reserve form-->
-        <section class="reserve">
+        <!--Formulario para reservar mesa-->
+        <section id="frm" class="reserve">
             <div class="form">
             <form>
                 <div class="form-container">
