@@ -1,121 +1,183 @@
-<!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portofolio</title>
-    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="shortcut icon" href="./assets/images/icon.png" type="image/x-icon">
+    <title>Portofolio</title>
 </head>
-
 <body>
 
-    <!--Title-->
-    <h1>Alejandra Quiroga Greñas - Riwi Developer</h1>    
-    <nav>
-            <ul style="list-style: none; padding: 0; margin: 0; text-align: center;">
-                <li style="display: inline-block; margin: 0 15px;">
-                    <a href="#about" style="color: white; text-decoration: none; font-weight: bold;">About me</a>
-                </li>
-                <li style="display: inline-block; margin: 0 15px;">
-                    <a href="" style="color: white; text-decoration: none; font-weight: bold;">Projects</a>
-                </li>
-                <li style="display: inline-block; margin: 0 15px;">
-                    <a href="" style="color: white; text-decoration: none; font-weight: bold;">Contact</a>
-                </li>
+    <!--Header and Hero section-->
+    <header id="beg" class="hero">
+        <nav class="navbar">
+            <div class="logo">Aleja Port.</div>
+
+            <!--Hamburger menu-->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span> <!--Lines-->
+                <span></span>
+                <span></span>
+            </label>
+
+            <!--Menu content-->
+            <ul class="nav-menu">
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects_">Projects</a></li>
+                <li><a href="#contact">Contact me</a></li>
             </ul>
         </nav>
 
-    
-    <!--About me-->
-    <section class="about_me" id="about">
-        <div class="abm-image">
-            <img src="img/profile-pic.jpeg" alt="Descripción de la imagen"><br>
-            <h2>About <b>me</b></h2>
+        <!--Hero-->
+        <div class="hero-content">
+            <span>Hi, how's it going?</span>
+            <h1>I'm Aleja Quiroga</h1>
+            <p>and I'm happy you're here to know a little more about me.</p>
+            <a href="#about"><button class="cta-button">Let's start</button></a>
         </div>
+    </header>
 
-        <div class="abm-text">
+    <main>
 
-            <p id="first_txt">Hi, I'm Aleja. I'd love for you to explore my <b>portofolio</b> with me. 😊</p>
+        <!--About me-->
+        <section class="about_me" id="about">
 
-            <p class="description">
-                To start, I'm a girl who's really passionate about learning; I love picking up new things. I'm a Multimedia Producer and currently studying Marketing and Digital Business at UNAD. Because of that, I'm really into <b>graphic design, audiovisual production,</b> and everything related to that amazing world. <br><br>
+            <!--Profile picture and tittle-->
+            <div class="abm-image">
+                <img src="./assets/images/profile-pic.jpeg" alt="DProfile picture"><br>
+                <h2>About <b>me</b></h2>
+            </div>
 
-                I'm also very interested in <b>software development</b>. It's really grown on me, and I'm super excited about the idea of seeing how I can blend this with my other passions to create great things.</p>
-            </p>
-        </div>
-    </section><br>
-    
-    
-    <!--Skills-->
-    <section class="skills">
-            <h2>Skil<b>ls</b></h2>
-            <ul class="sk_info">
-                <li class="button_0">UI/UX Design</li>
-                <li class="button_1">Web Designer / Developer</li><br><br>
-                <li class="button_1">Prototyping and wireframing</li>
-                <li class="button_0">Frontend development</li><br><br>
-                <li class="button_1">Branding and Identity design (with Digital implementation)</li><br><br>
-                <li class="button_0">Attention to detail</li>
-                <li class="button_1">Creativity and innovation</li>
-            </ul>
-    </section>
 
-    <!--Projects-->
-    <section class="projects">
-        <h2 id="pro"><b>Pro</b>jects</h2>
-        <table class="table_pro">
-            <thead>
-                <tr id="head_t">
-                    <th id="th_t">Name</th>
-                    <th id="th_t">Tool</th>
-                    <th id="th_t">Result</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Photography</td>
-                    <td>Lightroom</td>
-                    <td>
-                        <a target="_blank" id="ref_tb" href="https://drive.google.com/drive/folders/1TOn9egzFFppPKaZWxE1abSgu-DHOAXUA?usp=drive_link">Pictures</a>
-                    </td>
-                </tr>
-                <tr style="background-color: #f9f9f9;">
-                    <td>Graphic Design</td>
-                    <td>Illustrator</td>
-                    <td>
-                        <a target="_blank" id="ref_tb" href="https://drive.google.com/drive/folders/13qjijCuYM3GJ61D_HsFWS72suyENIy78?usp=drive_link">Designs</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Video Production</td>
-                    <td>Capcut <br> After Effects <br>Premiere Pro</td>
-                    <td><a target="_blank" id="ref_tb" href="https://drive.google.com/drive/folders/1V5HhDxQCv79w7JTMSafyq2p6DqxBfsuQ?usp=drive_link">Videos</a></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+            <!--Description about me-->
+            <div class="abm-text">
+                <p class="description">
+                    To start, I'm a girl who's really passionate about learning; I love picking up new things. I'm a Multimedia Producer and currently studying Marketing and Digital Business at UNAD. Because of that, I'm really into <b>graphic design, audiovisual production,</b> and everything related to that amazing world. <br><br>
 
-    <!--Contact form-->
-    <section class="contact">
-        <h2 id="pro"><b>Contact</b> form</h2>
-        <form class="frm_contact" action="#" method="post">
-            <label for="name">Name</label>
-            <input type="text" placeholder="Your name" required>
+                    I'm also very interested in <b>software development</b>. It's really grown on me, and I'm super excited about the idea of seeing how I can blend this with my other passions to create great things.</p>
+                </p>
+            </div>
+        </section>
 
-            <label for="name">Email</label>
-            <input type="email" name="email_ej8" placeholder="name@email.com" required>
+         <!--Skills-->
+        <section class="skills">
 
-            <label for="name">Message</label>
-            <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                <!--Tittle-->
+                <h2>Skil<b>ls</b></h2>
 
-            <button type="submit" id="send">Send</button>
-        </form>
-    </section>
+                <!--My skills-->
+                <ul class="sk_info">
+                    <li class="button_0">UI/UX Design</li>
+                    <li class="button_1">Web Designer / Developer</li><br><br>
+                    <li class="button_1">Prototyping and wireframing</li>
+                    <li class="button_0">Frontend development</li><br><br>
+                    <li class="button_1">Branding and Identity design (with Digital implementation)</li><br><br>
+                    <li class="button_0">Attention to detail</li>
+                    <li class="button_1">Creativity and innovation</li>
+                </ul>
 
+        </section>
+
+
+        <!--My projects-->
+        <section id="projects_" class="projects">
+
+            <!--Tittle-->
+            <h2><b>Pro</b>jects</h2>
+
+            <!--My projecst in cards-->
+            <div class="project-grid">
+                <div class="project_card">
+                    <h3><b>Photo</b>graphy</h3>
+                    <a href="https://drive.google.com/drive/folders/1TOn9egzFFppPKaZWxE1abSgu-DHOAXUA" target="_blank"><img src="./assets/images/photography.jpeg" alt="Picture"></a>
+                </div>
+                <div class="project_card">
+                    <h3>Street <b>chronicles</b></h3>
+                    <a href="./assets/docs/Dignidad sobre ruedas y aceras.pdf" download="Dignidad sobre ruedas y aceras"><img src="./assets/images/Dignidad sobre ruedas y aceras.jpg" alt="Street chronicles"></a>
+                </div>
+                <div class="project_card">
+                    <h3>Depth of field and <b>movement</b></h3>
+                    <a href="./assets/docs/Profundidad de campo y Movimiento (1).pdf" download="Portafolio-Profundidad de campo y Movimiento"><img src="./assets/images/Profundidad de campo y Movimiento.jpg" alt="Depth of field and movement"></a>
+                </div>
+            </div>
+        </section>
+
+        <!--Phrase-->
+        <section class="phrase">
+            <h1>An experience through <b>design</b>, madness and lots and lots of <b>love.</b></h1>
+        </section>
+
+        <!--Contact form-->
+        <section id="contact" class="contact">
+
+            <!--Form-->
+            <div class="form">
+                <form>
+                    <div class="form-container">
+                        <h2>Contact <b>me</b></h2>
+                        <form action="#" method="post">
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" name="name" required placeholder="Full name" minlength="3">
+
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" name="mail" required placeholder="yourname@mail.com">
+
+                        <label for="mesagge">Message</label>
+                        <textarea id="message" name="menssage" rows="3" placeholder="Write your message here ..."></textarea>
+
+                        <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </form>
+            </div>
+
+            <!--Image that is next to the form-->
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2023/02/21/13/10/cartoon-7804257_1280.jpg" alt="Form image">
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+
+    <!--Part 1 | Left-->
+      <div class="footer-section">
+        <h3>Aleja <b>Port.</b></h3>
+        <p>An experience through <b>design</b>, madness and lots and lots of <b>love.</b></p>
+      </div>
+
+    <!--Part 2 | Middle-->
+      <div class="footer-section">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#projects_">My projects</a></li>
+          <li><a href="#contact">Contact me</a></li>
+        </ul>
+      </div>
+
+    <!--Part 3 | Right-->
+      <div class="footer-section">
+        <h3>Contact <b>me</b></h3>
+        <ul>
+          <li>alejandraquirogag802@gmail.com</li>
+          <li>+57 314 297 0157</li>
+          <li>Colombia</li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Bottom-->
+    <div class="footer-bottom">
+      © 2025 Portofolio - Alejandra Quiroga Greñas. All rights reserved.
+    </div>
+  </footer>
 </body>
 </html>
